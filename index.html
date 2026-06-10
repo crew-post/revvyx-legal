@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revvyx – Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Revvyx UK vehicle lookup app (iOS and Android).">
+<style>
+  :root { --ink:#1a1a1a; --muted:#5b6470; --line:#e6e8eb; --accent:#0a7ea4; --bg:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 22px 80px; }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 4px; letter-spacing:-0.02em; }
+  .updated { color:var(--muted); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:20px; margin:38px 0 10px; letter-spacing:-0.01em; }
+  p, li { color:#2b3138; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  hr { border:0; border-top:1px solid var(--line); margin:30px 0; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:14.5px; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  ul { padding-left:22px; }
+  li { margin:4px 0; }
+  .lead { color:var(--muted); }
+  code, .mono { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:0.95em; }
+  footer { color:var(--muted); font-size:13px; margin-top:44px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e9ecef; --muted:#9aa3ad; --line:#2a2f36; --accent:#4cc2e0; --bg:#14171a; }
+    p, li, td { color:#cfd5db; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Revvyx – Privacy Policy</h1>
+  <p class="updated">Last updated: June 2026</p>
+  <p class="lead">Revvyx is a UK vehicle lookup app for iOS and Android. This policy explains what data is used, where it goes, and what is stored.</p>
+
+  <hr>
+
+  <h2>What Revvyx does</h2>
+  <p>You enter a UK number plate. Revvyx looks up publicly available information about that vehicle from official government APIs and third-party automotive databases, then displays it to you.</p>
+  <p>To do this, the app talks to <strong>the Revvyx backend</strong> — a server we operate that fetches the data on the app's behalf, caches results, generates AI content, and checks that requests come from a genuine copy of the app. This section explains what that server receives and keeps.</p>
+
+  <hr>
+
+  <h2>Data stored on your device</h2>
+  <p>Most of your data lives <strong>only on your device</strong>:</p>
+  <table>
+    <tr><th>What</th><th>Where</th><th>Why</th></tr>
+    <tr><td>Vehicles you save to Garage</td><td>Local app storage</td><td>So you can track MOT/tax dates</td></tr>
+    <tr><td>Vehicles you add to Favourites</td><td>Local app storage</td><td>So you can compare and revisit them</td></tr>
+    <tr><td>App settings (theme, units, reminders)</td><td>Local storage</td><td>To remember your preferences</td></tr>
+    <tr><td>Cached lookup results</td><td>Local app storage</td><td>To avoid repeated lookups</td></tr>
+  </table>
+  <p>You can clear cached data at any time from the app's Settings. Uninstalling the app removes all data stored on your device.</p>
+
+  <hr>
+
+  <h2>Data processed by the Revvyx backend</h2>
+  <p>When you look up a vehicle, the app sends the request to the Revvyx backend. The backend:</p>
+  <table>
+    <tr><th>What</th><th>Detail</th><th>Why</th></tr>
+    <tr><td><strong>The registration you search</strong></td><td>The number plate is sent to the backend and recorded</td><td>To fetch the vehicle data, cache it, and keep a record of searches to operate, secure and improve the app</td></tr>
+    <tr><td><strong>The vehicle details returned</strong></td><td>Make, model, year, fuel, colour, tax/MOT status, CO₂, engine size, mileage</td><td>Product analytics — to understand which vehicles are looked up and improve the service</td></tr>
+    <tr><td><strong>Approximate location</strong></td><td>Your country, derived from your IP address by our hosting provider</td><td>Regional analytics and abuse prevention</td></tr>
+    <tr><td><strong>Platform</strong></td><td>Whether the request came from iOS or Android</td><td>Analytics and support</td></tr>
+    <tr><td><strong>Device integrity check</strong></td><td>An attestation token from Apple (DeviceCheck) or Google (Play Integrity)</td><td>To confirm the request comes from a genuine, untampered copy of the app and block abuse. We do <strong>not</strong> receive your Apple or Google account details from this.</td></tr>
+  </table>
+  <p><strong>Retention.</strong> Vehicle results are cached on the backend for up to about 7 days (technical specifications, which don't change, may be kept longer). Search analytics are kept for roughly 3 months and then expire automatically. We do not create accounts, so this data is not tied to your name or email.</p>
+  <p><strong>IP addresses.</strong> Our hosting provider (Cloudflare) processes your IP address to route requests, derive your country, and rate-limit abusive traffic. We do not store your IP address ourselves.</p>
+  <p><strong>Legal basis (UK GDPR).</strong> A UK registration mark can, in some cases, identify the registered keeper, so we treat it as personal data. We process the data above under our <strong>legitimate interests</strong> in operating, securing, analysing and improving the app. You have the right to access or request deletion of data we hold — contact us at the address below.</p>
+
+  <hr>
+
+  <h2>Third-party services</h2>
+  <p>When you look up a plate, the Revvyx backend sends the relevant data to the following services to retrieve vehicle information and generate AI content:</p>
+  <table>
+    <tr><th>Service</th><th>What is sent</th><th>Why</th></tr>
+    <tr><td>DVLA Vehicle Enquiry API (gov.uk)</td><td>Registration number</td><td>Tax status, MOT status, fuel type, colour</td></tr>
+    <tr><td>DVSA MOT History API (gov.uk)</td><td>Registration number</td><td>Full MOT test history</td></tr>
+    <tr><td>TfL ULEZ API</td><td>Registration number</td><td>ULEZ compliance status</td></tr>
+    <tr><td>eBay My Garage</td><td>Registration number</td><td>Vehicle specs (power, variant name)</td></tr>
+    <tr><td>auto-data.net</td><td>Make, model, year</td><td>Detailed vehicle specifications</td></tr>
+    <tr><td>bikez.com</td><td>Make, model, year</td><td>Motorbike specifications</td></tr>
+    <tr><td>Anthropic Claude API</td><td>Vehicle details and any price you enter</td><td>AI-generated summaries and buyer's reports</td></tr>
+    <tr><td>DuckDuckGo</td><td>Vehicle description (make, model, year)</td><td>Fallback spec search</td></tr>
+  </table>
+  <p>Our backend also relies on <strong>Cloudflare</strong> for hosting, caching and security, and on <strong>Apple</strong> and <strong>Google</strong> for the device-integrity checks described above.</p>
+  <p>We do not control how these third parties handle the data they receive. Please refer to their respective privacy policies. <strong>Anthropic (Claude):</strong> only vehicle data and any price you enter is sent — never your name, contact details, or location. See <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a>.</p>
+
+  <hr>
+
+  <h2>What Revvyx does NOT do</h2>
+  <ul>
+    <li>Does not create user accounts or ask for your name, email, or phone number</li>
+    <li>Does not track you across other apps or websites</li>
+    <li>Does not use advertising SDKs or sell your data to anyone</li>
+    <li>Does not record your precise location</li>
+  </ul>
+
+  <hr>
+
+  <h2>Notifications</h2>
+  <p>If you enable MOT or tax reminders, Revvyx schedules <strong>local notifications</strong> on your device based on the expiry dates of vehicles in your Garage. These are generated and delivered entirely on your device — no data is sent to a server to schedule them. You can disable notifications at any time in your device settings.</p>
+
+  <hr>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, the "Last updated" date above will be updated. Continued use of the app constitutes acceptance of the revised policy.</p>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy, or want data deleted? Contact: <a href="mailto:nicolacioffi@outlook.it">nicolacioffi@outlook.it</a></p>
+
+  <footer>© 2026 Revvyx. This page is the official privacy policy for the Revvyx iOS and Android apps.</footer>
+
+</div>
+</body>
+</html>
